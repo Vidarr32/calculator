@@ -48,58 +48,6 @@ public class Main {
         return Pattern.matches("^(M{0,3})(D?C{0,3}|C[DM])(L?X{0,3}|X[LC])(V?I{0,3}|I[VX])$", string);
     }
 
-    //    public static String calc(String input) throws Exception {
-//        int result = 0;
-//        boolean isRoman = false;
-//        String[] splitInput = input.split(" ");
-//        if (splitInput.length == 3) {
-//            int number1, number2;
-//            if (isRoman(splitInput[0]) == true && isRoman(splitInput[2]) == true) {
-//                isRoman = true;
-//                number1 = romanToArabic(splitInput[0]);
-//                number2 = romanToArabic(splitInput[2]);
-//            } else {
-//                number1 = Integer.parseInt(splitInput[0]);
-//                number2 = Integer.parseInt(splitInput[2]);
-//            }
-//            String operation = splitInput[1];
-//            if ((number1 >= 1) && (number1 <= 10) && (number2 >= 1) && (number2 <= 10)) {
-//                switch (operation) {
-//                    case "+":
-//                        result = number1 + number2;
-//                        break;
-//                    case "-":
-//                        result = number1 - number2;
-//                        break;
-//                    case "*":
-//                        result = number1 * number2;
-//                        break;
-//                    case "/":
-//                        result = number1 / number2;
-//                        break;
-//                    default:
-//                        System.out.println("Выражение записано не правильно");
-//                }
-//            } else {
-//                return "Числа должны быть от 1 до 10";
-//            }
-//            if (isRoman == true) {
-//                if (result > 0) {
-//                    return arabicToRoman(result);
-//                } else {
-//                    return "Ответ не может быть отрицательным или равным нулю";
-//                }
-//            } else {
-//                return Integer.toString(result);
-//            }
-//        } else {
-//            try {
-//                throw new Exception();
-//            } catch (Exception e) {
-//                return "Неверный ввод";
-//            }
-//        }
-//    }
     private static boolean isDigit(String s) {
         return Pattern.matches("[-+]?\\d+", s);
     }
